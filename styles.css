@@ -1,0 +1,115 @@
+/* Reset e estilos globais */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #8B0000;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 75vh; /* Usar 75% da altura da viewport */
+}
+
+.header h1,
+.header p {
+    padding: 2em 0;
+    margin: 0;
+}
+
+.header-background {
+    position: relative;
+    width: 100%;
+    height: 80%; /* Aumentar a altura para cobrir parte superior da página */
+    background-image: url('img/Post.png'); /* Use hífens em nomes de arquivo */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Estilo do botão de inscrição no cabeçalho */
+.enrollment-button-on-image {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: #FFA500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.enrollment-button-on-image:hover {
+    background-color: #FF8C00;
+}
+
+/* Estilos para seções 'about-school' e 'enrollment' */
+.about-school,
+.enrollment {
+    width: 80%;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.enrollment {
+    background-color: #f9f9f9;
+}
+
+/* Estilo do botão de inscrição na seção 'enrollment' */
+.enrollment-button {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #ff3300ce;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.enrollment-button:hover {
+    background-color: #ff5e00;
+}
+
+/* Estilo do rodapé */
+.footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #fff;
+    color: #555;
+}
+
+/* Novo estilo elegante e tecnológico */
+.about-school h2,
+.enrollment h2 {
+    color: #8B0000; /* Vinho */
+    border-bottom: 2px solid #8B0000; /* Vinho */
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .about-school,
+    .enrollment {
+        width: 90%;
+    }
+}
